@@ -196,11 +196,13 @@ header .logo-link {
 
 .advantage-list {
   display: flex;
-  flex-basis: calc(100% / 4 - 30px);
 }
-
 .advantage-item:not(:last-child) {
   margin-right: 30px;
+}
+
+.advantage-item {
+  flex-basis: calc(100% / 4 - 30px);
 }
 
 .advantage-title {
@@ -243,11 +245,14 @@ header .logo-link {
   margin-right: 30px;
 }
 
+.example-item {
+  flex-basis: calc(100% / 3 - 30px);
+}
+
 /* Наша команда */
 
 .team-list {
   display: flex;
-  flex-basis: calc(100% / 4 - 30px);
 }
 
 .team-item:not(:last-child) {
@@ -258,25 +263,26 @@ header .logo-link {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  flex-basis: calc(100% / 4 - 30px);
 }
 
 .description {
-  padding: 30px 59px;
+  text-align: center;
+  padding: 30px 0;
 }
 
 .team-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
-  text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-title-color);
+  margin-bottom: 10px;
 }
 
 .team-text {
   font-size: 16px;
   line-height: 1.19;
-  text-align: center;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
 }
@@ -317,20 +323,20 @@ header .logo-link {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  flex-basis: calc(100% / 3 - 30px);
-}
-
-.portfolio-item:not(:nth-child(3n)) {
-  margin-right: 30px;
+  margin-right: -30px;
+  margin-bottom: -30px;
 }
 
 .portfolio-item {
-  border-bottom: 1px solid #eeeeee;
+  margin-right: 30px;
   margin-bottom: 30px;
+  flex-basis: calc(100% / 3 - 30px);
 }
 
 .portfolio-description {
   padding: 20px 24px;
+  border: solid #eeeeee;
+  border-width: 0 1px 1px;
 }
 
 .portfolio-title {
